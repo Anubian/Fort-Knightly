@@ -30,8 +30,15 @@ public class PlayerMovement : MonoBehaviour
 	{
 		//GetAxisRaw will only have a value of -1, 0 or 1. Means character will immediatly move to max speed unlike GetAxis.
 		//Horizontal automaticaly maps to a and d keys or left and right keys as seen in Unity Project Settings Input
+		// Private variables in FixedUpdate and will only be called in FixedUpdate
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
 	}
+
+	void Move (float h, float v)
+	{
+		movement.Set (
+	}
+
 
 }
